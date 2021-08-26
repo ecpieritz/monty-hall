@@ -2,7 +2,8 @@
 
 ## 🖥 Preview
 <p align = "center">
-  <img src = "https://github.com/ecpieritz/xxx" max-width = "800">
+  <img src = "https://github.com/ecpieritz/monty-hall/blob/main/public/img/print-01.jpg?raw=true" max-width = "600">
+  <img src = "https://github.com/ecpieritz/monty-hall/blob/main/public/img/print-02.jpg?raw=true" max-width = "600">
 </p>
 
 ---
