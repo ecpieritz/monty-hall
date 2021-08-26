@@ -1,7 +1,18 @@
 <template>
   <div id="app">
     <h1>Monty Hall Problem</h1>
-    <Door number='1' :hasGift="false" />
+    <div class="form">
+      <div v-if="!started">
+        <label for="portsAmount">How many doors?</label>
+        <input type="text" id="portsAmount" size="3" v-model.number="portsAmount">
+      </div>
+      <div v-if="!started">
+        <label for="selectedPort">Which door is awarded?</label>
+        <input type="text" id="selectedPort" size="3" v-model.number="selectedPort">
+      </div>
+      <button v-if="!started" @click="started = true">Start</button>
+      <button v-if="!started" @click="started = false">Restart</button>
+    </div>
   </div>
 </template>
 
@@ -11,6 +22,13 @@ import Door from './components/Door.vue'
   export default {
     name: "App",
     components: {Door},
+    data(){
+      return{
+        started: false,
+        portsAmount: 3,
+        selectedPort: null
+      }
+    }
   };
 </script>
 
