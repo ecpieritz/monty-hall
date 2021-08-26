@@ -61,4 +61,25 @@ import Door from './components/Door.vue'
     padding: 20px;
     margin-bottom: 60px;
   }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .form, .form input, .form button{
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+
+  .doors{
+    align-self: stretch;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
 </style>
