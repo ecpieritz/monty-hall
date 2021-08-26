@@ -19,15 +19,18 @@
         <Door :hasGift="i == selectedPort" :number="i" />
       </div>
     </div>
+
+    <Footer />
   </div>
 </template>
 
 <script>
 import Door from './components/Door.vue'
+import Footer from './components/Footer.vue'
 
   export default {
     name: "App",
-    components: {Door},
+    components: {Door, Footer},
     data(){
       return{
         started: false,
