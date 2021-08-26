@@ -2,15 +2,17 @@
   <div id="app">
     <h1>Monty Hall Problem</h1>
     <Gift />
+    <Door />
   </div>
 </template>
 
 <script>
 import Gift from './components/Gift.vue'
+import Door from './components/Door.vue'
 
   export default {
     name: "App",
-    components: {Gift},
+    components: {Gift, Door},
   };
 </script>
 
